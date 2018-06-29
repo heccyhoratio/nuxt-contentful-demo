@@ -1,0 +1,6 @@
+{
+    "name": "centos/nuxt-contentful-demo",
+    "require": {
+        "vlucas/phpdotenv": "^2.4"
+    }
+}
