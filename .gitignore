@@ -12,3 +12,5 @@ dist
 
 # Env
 .env
+
+/vendor/
