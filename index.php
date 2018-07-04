@@ -15,7 +15,13 @@ $dotenv->load();
 //echo($user);
 //    if ($user == $_SERVER['PHP_AUTH_USER'] && $password == $_SERVER['PHP_AUTH_PW']) {
 
-        $output = shell_exec('/usr/bin/sudo /usr/bin/git pull 2>&1');
+        $output = shell_exec('sudo -u git bash 2>&1');
+        echo("<pre>$output</pre>");
+
+        $output = shell_exec('/usr/bin/git pull 2>&1');
+        echo("<pre>$output</pre>");
+
+        $output = shell_exec('exit 2>&1');
         echo("<pre>$output</pre>");
 
         $output = shell_exec('/usr/bin/sudo /var/www/vhosts/nuxt-contentful-demo/node_modules/.bin/nuxt generate 2>&1');
