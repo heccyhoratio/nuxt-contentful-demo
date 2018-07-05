@@ -1,8 +1,8 @@
 <?php
 
-require('./vendor/autoload.php');
-$dotenv = new Dotenv\Dotenv(__DIR__);
-$dotenv->load();
+//require('./vendor/autoload.php');
+//$dotenv = new Dotenv\Dotenv(__DIR__);
+//$dotenv->load();
 
 //if (!isset($_SERVER['PHP_AUTH_USER'])) {
 //    header('WWW-Authenticate: Basic realm="My Realm"');
