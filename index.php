@@ -18,7 +18,7 @@ $dotenv->load();
 
 
 
-        file_put_contents('testlog.log', print_r($_SERVER, true) ,FILE_APPEND);
+//        file_put_contents('testlog.log', print_r($_SERVER, true) ,FILE_APPEND);
 
         $output = shell_exec('/usr/bin/sudo /usr/bin/git pull 2>&1');
         echo("<pre>$output</pre>");
@@ -30,7 +30,7 @@ $dotenv->load();
 
 
 
-        
+
 //    } else {
 //        echo("No Auth");
 //    }
