@@ -28,9 +28,6 @@ $dotenv->load();
         echo("<pre>$output</pre>");
 
 
-
-
-
 //    } else {
 //        echo("No Auth");
 //    }
