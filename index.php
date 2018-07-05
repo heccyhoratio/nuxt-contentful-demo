@@ -15,6 +15,9 @@ $dotenv->load();
 //echo($user);
 //    if ($user == $_SERVER['PHP_AUTH_USER'] && $password == $_SERVER['PHP_AUTH_PW']) {
 
+
+
+
         file_put_contents('testlog.log', print_r($_SERVER, true) ,FILE_APPEND);
 
         $output = shell_exec('/usr/bin/sudo /usr/bin/git pull 2>&1');
