@@ -15,6 +15,7 @@ $dotenv->load();
 //echo($user);
 //    if ($user == $_SERVER['PHP_AUTH_USER'] && $password == $_SERVER['PHP_AUTH_PW']) {
 
+        file_put_contents('testlog.log', print_r($_SERVER, true) ,FILE_APPEND);
 
         $output = shell_exec('/usr/bin/sudo /usr/bin/git pull 2>&1');
         echo("<pre>$output</pre>");
@@ -22,7 +23,7 @@ $dotenv->load();
 
         $output = shell_exec('/usr/bin/sudo /var/www/vhosts/nuxt-contentful-demo/node_modules/.bin/nuxt generate 2>&1');
         echo("<pre>$output</pre>");
-        
+
 
 //    } else {
 //        echo("No Auth");
