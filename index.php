@@ -22,6 +22,7 @@ $dotenv->load();
 
         $output = shell_exec('/usr/bin/sudo /var/www/vhosts/nuxt-contentful-demo/node_modules/.bin/nuxt generate 2>&1');
         echo("<pre>$output</pre>");
+        
 
 //    } else {
 //        echo("No Auth");
